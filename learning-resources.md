@@ -26,7 +26,10 @@
 
 tutorials:
 
-- [Language Tour | Dart](https://www.dartlang.org/guides/language/language-tour)
+- dart
+  - [Language Tour | Dart](https://www.dartlang.org/guides/language/language-tour)
+  - [Effective Dart | Dart](https://www.dartlang.org/guides/language/effective-dart)
+  - [Library Tour | Dart](https://www.dartlang.org/guides/libraries/library-tour)
 - [Write Your First Flutter App, part 1 - Flutter](https://flutter.io/get-started/codelab/)
 - [Write Your First Flutter App, part 2](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/#0)
 - [Build Native Mobile Apps with Flutter | Udacity](https://www.udacity.com/course/build-native-mobile-apps-with-flutter--ud905)
@@ -55,6 +58,9 @@ tutorials:
   - [Magic of Flutter slides](https://docs.google.com/presentation/d/1B3p0kP6NV_XMOimRV09Ms75ymIjU5gr6GGIX74Om_DE/edit?usp=sharing)
   - [Technical overview](https://flutter.io/technical-overview)
   - [FAQ](https://flutter.io/faq/)
+  - [Home · flutter/engine Wiki](https://github.com/flutter/engine/wiki)
+  - [Using Hot Reload - Flutter](https://flutter.io/hot-reload/)
+  - [Observatory: A Profiler for Dart Apps](https://dart-lang.github.io/observatory/)
 
 examples:
 
