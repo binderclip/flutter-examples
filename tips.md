@@ -1,5 +1,9 @@
 # tips
 
+## VS Code as an IDE
+
+- [Developing Flutter apps in an IDE - Flutter](https://flutter.io/using-ide-vscode/)
+
 ## flutter get packages
 
 ```shell
