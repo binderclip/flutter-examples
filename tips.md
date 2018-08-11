@@ -1,5 +1,23 @@
 # tips
 
+## flutter get packages
+
+```shell
+flutter packages get
+```
+
+## run flutter app
+
+```shell
+flutter run
+```
+
+## new flutter project
+
+```shell
+flutter create a_new_project
+```
+
 ## iOS 工程配置
 
 - 打开 `<path-to-flutter-project>/ios/Runner.xcworkspace`
