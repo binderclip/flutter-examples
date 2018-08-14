@@ -5,7 +5,7 @@
 - [x] Write Your First Flutter App，有个大概感受
 - [x] dart language tour，学一下基本语法
 - [x] Write Your First Flutter App，再回顾一遍
-- [ ] Udacity online Flutter traning，先走一遍，有个实际 app 开发的感受
+- [x] Udacity online Flutter traning，先走一遍，有个实际 app 开发的感受
 - [ ] detail
 - [ ] Build Layout，简单的构建一下界面
 - [ ] Adding Interactivity，简单的加一下交互
