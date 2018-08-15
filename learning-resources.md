@@ -52,6 +52,7 @@ tutorials:
 - [Internationalizing Flutter Apps - Flutter](https://flutter.io/tutorials/internationalization/)
 - [Accessibility - Flutter](https://flutter.io/accessibility/)
 - more detail
+  - [Keep it Simple, State: Architecture for Flutter Apps (DartConf 2018) - YouTube](https://www.youtube.com/watch?v=zKXz3pUkw9A)
   - [Framework's layered design](https://www.youtube.com/watch?v=dkyY9WCGMi0)
   - [Flutter's rendering pipeline](https://www.youtube.com/watch?v=UUfXWzp0-DU)
   - [Architecture diagrams](https://docs.google.com/presentation/d/1cw7A4HbvM_Abv320rVgPVGiUP2msVs7tfGbkgdrTy0I/edit?usp=sharing)
@@ -64,6 +65,7 @@ tutorials:
 
 examples:
 
+- [Flutter Architecture Samples](http://fluttersamples.com/)
 - [Sample App Catalog - Flutter](https://flutter.io/catalog/samples/)
 - [nisrulz/flutter-examples: [Examples] Simple basic isolated apps, for budding flutter devs.](https://github.com/nisrulz/flutter-examples)
 - [flutter/examples at master · flutter/flutter](https://github.com/flutter/flutter/tree/master/examples)
@@ -73,3 +75,11 @@ posts:
 
 - [Flutter · 语雀](https://www.yuque.com/xytech/flutter)
 - [主页 | Flutter中文开发者论坛](http://flutter-dev.cn/)
+
+other:
+
+- [Flutter by Google - YouTube](https://www.youtube.com/playlist?list=PLOU2XLYxmsIJ7dsVN4iRuA7BT8XHzGtCr)
+  - [The Boring Flutter Development Show - YouTube](https://www.youtube.com/playlist?list=PLOU2XLYxmsIK0r_D-zWcmJ1plIcDNnRkK)
+  - [Using Material Design with Flutter - YouTube](https://www.youtube.com/watch?v=DL0Ix1lnC4w&index=5&t=0s&list=PLOU2XLYxmsIJ7dsVN4iRuA7BT8XHzGtCr)
+- [Flutter's Rendering Pipeline GoogleTechTalks](https://www.youtube.com/watch?v=UUfXWzp0-DU)
+- [Flutter Challenge - Egg Timer Fluttery](https://www.youtube.com/watch?v=svxUUz5mi9s)
