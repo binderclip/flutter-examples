@@ -6,12 +6,14 @@
 - [x] dart language tour，学一下基本语法
 - [x] Write Your First Flutter App，再回顾一遍
 - [x] Udacity online Flutter traning，先走一遍，有个实际 app 开发的感受
-- [ ] detail
+- [x] detail
+- [ ] 浏览一遍前面遇到的 Widget 或常见 class 的继承关系
 - [ ] Build Layout，简单的构建一下界面
 - [ ] Adding Interactivity，简单的加一下交互
 - [ ] A Tour of the Flutter Widget Framework，了解控件框架
 - [ ] Flutter Cookbook，常见需求的实现
-- [ ] Widgets Catalog，看一下所有的控件
+- [ ] 从最基础的组件开始做一些实验
+- [x] Widgets Catalog，看一下所有的控件
 - [ ] Sample App Catalog，看一些示例的 app
 - [ ] Building Beautiful UIs with Flutter，细致学一下搭建 UI
 - [ ] Firebase for Flutter，存储数据

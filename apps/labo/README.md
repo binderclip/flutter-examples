@@ -1,8 +1,5 @@
 # labo
 
-A new Flutter project.
+## todo
 
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+- [ ] a route view
