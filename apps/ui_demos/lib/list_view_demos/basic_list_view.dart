@@ -19,7 +19,6 @@ class BasicListViewPage extends StatelessWidget {
           ListTile(
             title: Text('bar'),
             onTap: () {
-
             },
           ),
         ],
