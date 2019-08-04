@@ -33,6 +33,15 @@ class TextFieldsPage extends StatelessWidget {
                 border: OutlineInputBorder(),
               ),
             ),
+            Text('== no border decoration =='),
+            DecoratedBox(
+              decoration: BoxDecoration(color: Colors.grey),
+              child: TextField(
+                decoration: InputDecoration.collapsed(
+                  hintText: 'input something',
+                ),
+              ),
+            ),
           ],
         ),
       ),
