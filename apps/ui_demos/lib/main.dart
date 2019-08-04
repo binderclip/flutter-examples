@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'app_bar_demos/app_bar_button.dart';
 import 'list_view_demos/basic_list_view.dart';
 import 'list_view_demos/long_list_view.dart';
 import 'navigation_demos/simple_nav_back.dart';
@@ -45,7 +46,7 @@ class RoutePage extends StatelessWidget {
           ListTile(
             title: Text('BasicListView'),
             onTap: () {
-              debugPrint('BasicListView taped');
+              debugPrint('BasicListView tapped');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => BasicListViewPage()),
@@ -55,7 +56,7 @@ class RoutePage extends StatelessWidget {
           ListTile(
             title: Text('LongListView'),
             onTap: () {
-              debugPrint('LongListView taped');
+              debugPrint('LongListView tapped');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => LongListViewPage()),
@@ -66,7 +67,7 @@ class RoutePage extends StatelessWidget {
           ListTile(
             title: Text('SimpleNavbackPage'),
             onTap: () {
-              debugPrint('SimpleNavbackPage taped');
+              debugPrint('SimpleNavbackPage tapped');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SimpleNavBackPage()),
@@ -77,7 +78,7 @@ class RoutePage extends StatelessWidget {
           ListTile(
             title: Text('ReadTextFieldValuePage'),
             onTap: () {
-              debugPrint('ReadTextFieldValuePage taped');
+              debugPrint('ReadTextFieldValuePage tapped');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ReadTextFieldValuePage()),
@@ -87,13 +88,23 @@ class RoutePage extends StatelessWidget {
           ListTile(
             title: Text('TextFieldsPage'),
             onTap: () {
-              debugPrint('TextFieldsPage taped');
+              debugPrint('TextFieldsPage tapped');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => TextFieldsPage()),
               );
             },
           ),
+          ListTile(
+            title: Text('AppBarButtonPage'),
+            onTap: () {
+              debugPrint('AppBarButtonPage tapped');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AppBarButtonPage()),
+              );
+            },
+          )
         ],
       ),
     );
