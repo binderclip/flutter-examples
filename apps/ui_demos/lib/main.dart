@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_demos/list_view_demos/basic_list_view.dart';
+import 'package:ui_demos/list_view_demos/long_list_view.dart';
 import 'package:ui_demos/navigation_demos/simple_nav_back.dart';
 
 void main() => runApp(MyApp());
@@ -38,6 +39,7 @@ class RoutePage extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListTile(title: Text('=== List ===')),
           ListTile(
             title: Text('BasicListView'),
             onTap: () {
@@ -48,6 +50,17 @@ class RoutePage extends StatelessWidget {
               );
             },
           ),
+          ListTile(
+            title: Text('LongListView'),
+            onTap: () {
+              debugPrint('LongListView taped');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LongListViewPage()),
+              );
+            },
+          ),
+          ListTile(title: Text('=== Navigation ===')),
           ListTile(
             title: Text('SimpleNavbackPage'),
             onTap: () {
