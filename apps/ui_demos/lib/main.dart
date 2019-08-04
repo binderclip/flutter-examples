@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_demos/list_view_demos/basic_list_view.dart';
-import 'package:ui_demos/list_view_demos/long_list_view.dart';
-import 'package:ui_demos/navigation_demos/simple_nav_back.dart';
+import 'list_view_demos/basic_list_view.dart';
+import 'list_view_demos/long_list_view.dart';
+import 'navigation_demos/simple_nav_back.dart';
+import 'text_field_demos/read_text_field_value.dart';
 
 void main() => runApp(MyApp());
 
@@ -68,6 +69,17 @@ class RoutePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SimpleNavBackPage()),
+              );
+            },
+          ),
+          ListTile(title: Text('=== TextField ===')),
+          ListTile(
+            title: Text('ReadTextFieldValuePage'),
+            onTap: () {
+              debugPrint('ReadTextFieldValuePage taped');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ReadTextFieldValuePage()),
               );
             },
           ),
