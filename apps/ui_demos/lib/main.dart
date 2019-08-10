@@ -3,6 +3,7 @@ import 'app_bar_demos/app_bar_button.dart';
 import 'list_view_demos/basic_list_view.dart';
 import 'list_view_demos/long_list_view.dart';
 import 'navigation_demos/simple_nav_back.dart';
+import 'snack_bar_demos/snack_bar.dart';
 import 'text_field_demos/read_text_field_value.dart';
 import 'text_field_demos/text_fields.dart';
 
@@ -95,6 +96,7 @@ class RoutePage extends StatelessWidget {
               );
             },
           ),
+          ListTile(title: Text('=== Bar ===')),
           ListTile(
             title: Text('AppBarButtonPage'),
             onTap: () {
@@ -104,7 +106,17 @@ class RoutePage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => AppBarButtonPage()),
               );
             },
-          )
+          ),
+          ListTile(
+            title: Text('SnackBarPage'),
+            onTap: () {
+              debugPrint('SnackBarPage tapped');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SnackBarPage()),
+              );
+            },
+          ),
         ],
       ),
     );
