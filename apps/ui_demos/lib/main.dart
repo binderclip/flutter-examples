@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'app_bar_demos/app_bar_button.dart';
 import 'list_view_demos/basic_list_view.dart';
 import 'list_view_demos/dynamic_list_view.dart';
+import 'list_view_demos/future_builder_list_view.dart';
 import 'list_view_demos/long_list_view.dart';
 import 'navigation_demos/simple_nav_back.dart';
 import 'snack_bar_demos/snack_bar.dart';
@@ -72,6 +73,16 @@ class RoutePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => DynamicListView()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('FutureBuilderListView'),
+            onTap: () {
+              debugPrint('FutureBuilderListView tapped');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FutureBuilderListView()),
               );
             },
           ),

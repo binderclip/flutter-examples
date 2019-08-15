@@ -3,20 +3,19 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
-class AsyncListView extends StatefulWidget {
+class FutureBuilderListView extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return null;
+  _FutureBuilderListViewState createState() {
+    return _FutureBuilderListViewState();
   }
 }
 
-class _AsyncListViewState extends State<AsyncListView> {
+class _FutureBuilderListViewState extends State<FutureBuilderListView> {
   bool _isButtonClicked = false;
   var _buttonIcon = Icons.cloud_download;
   var _buttonText = "Fetch Data";
   var _buttonColor = Colors.green;
-  final title = 'AsyncListView';
+  final title = 'FutureBuilderListView';
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +29,34 @@ class _AsyncListViewState extends State<AsyncListView> {
           ///loads. This can be used to make this Future Builder dependent
           ///on a button click.
           future: _isButtonClicked ? getDemoResponse() : null,
-          builder:
+          builder: (context, snapshot) {
+            switch (snapshot.connectionState) {
+              case ConnectionState.none:
+                return Text(
+                  'Press the button to fetch data',
+                  textAlign: TextAlign.center,
+                );
+              case ConnectionState.active:
+                // when the data is being fetched
+              case ConnectionState.waiting:
+                return CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                );
+              case ConnectionState.done:
+                // task is complete with an error
+                if (snapshot.hasError) {
+                  return Text(
+                    'Error:\n\n${snapshot.error}',
+                    textAlign: TextAlign.center,
+                  );
+                }
+                // task is complete with some data
+                return Text(
+                  'Fetched Data:\n\n${snapshot.data.title}',
+                  textAlign: TextAlign.center,
+                );
+            }
+          },
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
