@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_demos/navigation_demos/show_data_page.dart';
 import 'app_bar_demos/app_bar_button.dart';
 import 'list_view_demos/basic_list_view.dart';
 import 'list_view_demos/dynamic_list_view.dart';
@@ -94,6 +95,18 @@ class RoutePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SimpleNavBackPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('ShowDataPage'),
+            onTap: () {
+              debugPrint('ShowDataPage tapped');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ShowDataPage(data: Data('Hello', 'world!!!')),
+                ),
               );
             },
           ),
