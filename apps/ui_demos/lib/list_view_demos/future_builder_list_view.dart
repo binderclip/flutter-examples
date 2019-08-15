@@ -64,7 +64,7 @@ class _FutureBuilderListViewState extends State<FutureBuilderListView> {
         backgroundColor: _buttonColor,
         onPressed: () {
           ///Calling method to fetch data from the server
-          getDemoResponse();
+//          getDemoResponse(); // 看起来这一行是多余的
 
           ///You need to reset UI by calling setState.
           setState(() {
