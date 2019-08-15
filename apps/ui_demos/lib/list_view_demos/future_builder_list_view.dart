@@ -31,11 +31,6 @@ class _FutureBuilderListViewState extends State<FutureBuilderListView> {
           future: _isButtonClicked ? getDemoResponse() : null,
           builder: (context, snapshot) {
             switch (snapshot.connectionState) {
-              case ConnectionState.none:
-                return Text(
-                  'Press the button to fetch data',
-                  textAlign: TextAlign.center,
-                );
               case ConnectionState.active:
                 // when the data is being fetched
               case ConnectionState.waiting:
@@ -53,6 +48,11 @@ class _FutureBuilderListViewState extends State<FutureBuilderListView> {
                 // task is complete with some data
                 return Text(
                   'Fetched Data:\n\n${snapshot.data.title}',
+                  textAlign: TextAlign.center,
+                );
+              default:
+                return Text(
+                  'Press the button to fetch data',
                   textAlign: TextAlign.center,
                 );
             }
