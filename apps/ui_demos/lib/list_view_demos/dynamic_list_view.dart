@@ -33,6 +33,11 @@ class _DynamicListViewState extends State<DynamicListView> {
                 onTap: () {
                   debugPrint('tile tapped, i: $index'); // 这样性能可能不太好，每个都要创建一个回调函数
                 },
+                onLongPress: () {
+                  Scaffold
+                    .of(context)
+                    .showSnackBar(SnackBar(content: Text(index.toString())));
+                },
               );
             },
           ),),
