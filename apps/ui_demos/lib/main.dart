@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_demos/navigation_demos/show_data_page.dart';
 import 'dialog_demos/alert_dialog.dart';
 import 'app_bar_demos/app_bar_button.dart';
+import 'dialog_demos/simple_dialog.dart';
 import 'list_view_demos/basic_list_view.dart';
 import 'list_view_demos/dynamic_list_view.dart';
 import 'list_view_demos/future_builder_list_view.dart';
@@ -161,6 +162,16 @@ class RoutePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => AlertDialogPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('SimpleDialogPage'),
+            onTap: () {
+              debugPrint('SimpleDialogPage tapped');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SimpleDialogPage()),
               );
             },
           ),
