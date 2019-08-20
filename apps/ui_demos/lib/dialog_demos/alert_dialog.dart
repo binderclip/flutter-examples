@@ -36,7 +36,7 @@ class _AlertDialogPage extends StatelessWidget {
                 FlatButton(
                   child: Text('Regret'),
                   onPressed: () {
-//                  Navigator.of(context).pop();
+                    Navigator.of(context).pop();
                     debugPrint('regret button touched');
                   },
                 ),

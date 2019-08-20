@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_demos/navigation_demos/show_data_page.dart';
-import 'alert_dialog_demos/alert_dialog.dart';
+import 'dialog_demos/alert_dialog.dart';
 import 'app_bar_demos/app_bar_button.dart';
 import 'list_view_demos/basic_list_view.dart';
 import 'list_view_demos/dynamic_list_view.dart';
@@ -153,7 +153,7 @@ class RoutePage extends StatelessWidget {
               );
             },
           ),
-          ListTile(title: Text('=== AlertDialog ===')),
+          ListTile(title: Text('=== Dialog ===')),
           ListTile(
             title: Text('AlertDialogPage'),
             onTap: () {
