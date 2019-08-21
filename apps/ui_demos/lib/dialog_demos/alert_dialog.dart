@@ -40,6 +40,13 @@ class _AlertDialogPage extends StatelessWidget {
                     debugPrint('regret button touched');
                   },
                 ),
+                FlatButton(
+                  child: Text('No regrets'),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                    debugPrint('no regrets button touched');
+                  },
+                ),
               ],
             ),
           );
