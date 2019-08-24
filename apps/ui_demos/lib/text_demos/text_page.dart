@@ -10,8 +10,18 @@ class TextPage extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
-          Text('Hello'),
-          Text('World!'),
+          Text(
+            'Hello',
+            style: TextStyle(
+              backgroundColor: Colors.deepOrange,
+            ),
+          ),
+          Text(
+            'World!',
+            style: TextStyle(
+              backgroundColor: Colors.blue,
+            ),
+          ),
         ],
       ),
     );
