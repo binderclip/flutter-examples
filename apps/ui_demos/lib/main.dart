@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ui_demos/navigation_demos/show_data_page.dart';
 import 'dialog_demos/alert_dialog.dart';
-import 'app_bar_demos/app_bar_button.dart';
+import 'bar_demos/app_bar_button.dart';
+import 'bar_demos/bottom_navigation_bar.dart';
+import 'bar_demos/snack_bar.dart';
 import 'dialog_demos/simple_dialog.dart';
 import 'layout_demos/column.dart';
 import 'list_view_demos/basic_list_view.dart';
@@ -9,7 +11,6 @@ import 'list_view_demos/dynamic_list_view.dart';
 import 'list_view_demos/future_builder_list_view.dart';
 import 'list_view_demos/long_list_view.dart';
 import 'navigation_demos/simple_nav_back.dart';
-import 'snack_bar_demos/snack_bar.dart';
 import 'text_demos/text_page.dart';
 import 'text_field_demos/read_text_field_value.dart';
 import 'text_field_demos/text_fields.dart';
@@ -143,6 +144,16 @@ class RoutePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => AppBarButtonPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('BottomNavigationBarPage'),
+            onTap: () {
+              debugPrint('BottomNavigationBarPage tapped');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => BottomNavigationBarPage()),
               );
             },
           ),
