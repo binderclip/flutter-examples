@@ -3,12 +3,14 @@ import 'package:ui_demos/navigation_demos/show_data_page.dart';
 import 'dialog_demos/alert_dialog.dart';
 import 'app_bar_demos/app_bar_button.dart';
 import 'dialog_demos/simple_dialog.dart';
+import 'layout_demos/column.dart';
 import 'list_view_demos/basic_list_view.dart';
 import 'list_view_demos/dynamic_list_view.dart';
 import 'list_view_demos/future_builder_list_view.dart';
 import 'list_view_demos/long_list_view.dart';
 import 'navigation_demos/simple_nav_back.dart';
 import 'snack_bar_demos/snack_bar.dart';
+import 'text_demos/text_page.dart';
 import 'text_field_demos/read_text_field_value.dart';
 import 'text_field_demos/text_fields.dart';
 
@@ -175,6 +177,28 @@ class RoutePage extends StatelessWidget {
               );
             },
           ),
+          ListTile(title: Text('=== Layout ===')),
+          ListTile(
+            title: Text('ColumnPage'),
+            onTap: () {
+              debugPrint('ColumnPage');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ColumnPage()),
+              );
+            },
+          ),
+          ListTile(title: Text('=== Text ===')),
+          ListTile(
+            title: Text('Text'),
+            onTap: () {
+              debugPrint('TextPage');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => TextPage()),
+              );
+            },
+          )
         ],
       ),
     );
